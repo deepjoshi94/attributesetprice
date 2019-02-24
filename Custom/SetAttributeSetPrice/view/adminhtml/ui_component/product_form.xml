@@ -1,0 +1,26 @@
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <htmlContent name="hide_attr" sortOrder="22">
+        <block class="Custom\SetAttributeSetPrice\Block\Adminhtml\Catalog\Product\Edit\Tab\SetPrice" name="hide_price">
+            <arguments>
+                <argument name="config" xsi:type="array">
+                    <item name="label" xsi:type="string" translate="true">Lechef</item>
+                    <item name="collapsible" xsi:type="boolean">true</item>
+                    <item name="opened" xsi:type="boolean">false</item>
+                    <item name="sortOrder" xsi:type="string">11</item>
+                    <item name="canShow" xsi:type="boolean">true</item>
+                    <item name="componentType" xsi:type="string">fieldset</item>
+                </argument>
+            </arguments>
+        </block>
+        
+        <container name="my_component_container">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="sortOrder" xsi:type="number">1</item>
+                    <item name="component" xsi:type="string">Custom_SetAttributeSetPrice/js/components/my-component</item>
+                </item>
+            </argument>
+        </container>
+
+    </htmlContent>
+</form>
